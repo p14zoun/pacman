@@ -54,17 +54,17 @@
             this.physics.startSystem(Phaser.Physics.ARCADE);
 
         },
-
+	
         preload: function () {
 
             //  We need this because the assets are on github pages
             //  Remove the next 2 lines if running locally
-            this.load.baseURL = 'https://p14zoun.github.io/pacman/';
-            this.load.crossOrigin = 'anonymous';
+            //this.load.baseURL = 'https://p14zoun.github.io/pacman/';
+            //this.load.crossOrigin = 'anonymous';
 
-            this.load.image('dot', 'assets/dot.png');
+            this.load.image('dot', 'assets/dot.png');	
             this.load.image('tiles', 'assets/pacman-tiles.png');
-            this.load.spritesheet('pacman', 'assets/pacman.png', 32, 32);
+            this.load.spritesheet('pacman', 'assets/pacman.png', 32, 32); //edw allakse to 39 px analoga me tin apostasi pou exoyn ta sprites metaksy topuw px twra eixan 39
             this.load.tilemap('map', 'assets/pacman-map.json', null, Phaser.Tilemap.TILED_JSON);
 
             //  Needless to say, graphics (C)opyright Namco
@@ -76,7 +76,7 @@
             this.map = this.add.tilemap('map');
             this.map.addTilesetImage('pacman-tiles', 'tiles');
 
-            this.layer = this.map.createLayer('Pacman');
+            this.layer = this.map.createLayer('Pacman');			
 
             this.dots = this.add.physicsGroup();
 
@@ -92,7 +92,7 @@
             //  Position Pacman at grid location 14x17 (the +8 accounts for his anchor)
             this.pacman = this.add.sprite((14 * 16) + 8, (17 * 16) + 8, 'pacman', 0);
             this.pacman.anchor.set(0.5);
-            this.pacman.animations.add('munch', [0, 1, 2, 1], 20, true);
+            this.pacman.animations.add('munch', [0, 1, 2, 3, 4, 5, 6, 7, 8], 10, true);  //analoga me posa sprites o arithos mexri to 5 giati eixa 6 sprites 
 
             this.physics.arcade.enable(this.pacman);
             this.pacman.body.setSize(16, 16, 0, 0);
