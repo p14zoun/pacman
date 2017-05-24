@@ -104,7 +104,7 @@
             this.burgers.setAll('y', 0, false, false, 1);
 			///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 			        // Score and debug texts
-			this.scoreText = game.add.text(10, 6, "Score: " + this.score, { fontSize: "16px", fill: "green" });
+			this.scoreText = game.add.text(10, 5, "Score: " + this.score, { fontSize: "16px", fill: "green" });
 			//////////////////////////////////	///////////////////////////////////////////////////////////////////////////////////
             //  Pacman should collide with everything except the safe tile
             this.map.setCollisionByExclusion([this.safetile], true, this.layer);
@@ -121,7 +121,7 @@
             this.pacman.play('munch');
             this.move(Phaser.LEFT);
 
-		 this.livesText = game.add.text(250, 6, 'Lives: 3', { fontSize: '16px', fill: 'green' });		/////
+		 this.livesText = game.add.text(270, 5, 'Lives: 3', { fontSize: '16px', fill: 'green' });		/////
 		
         },
 
