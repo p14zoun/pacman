@@ -21,6 +21,9 @@
 <body>
 
     <script type="text/javascript">
+	    ////////////////////////////////////////////////////////////////////////////////
+	    var text = "Time";
+		var timerEvents = 0 ;
 
     var game = new Phaser.Game(448, 496, Phaser.AUTO);
 
@@ -291,7 +294,11 @@
             this.directions[2] = this.map.getTileRight(this.layer.index, this.marker.x, this.marker.y);
             this.directions[3] = this.map.getTileAbove(this.layer.index, this.marker.x, this.marker.y);
             this.directions[4] = this.map.getTileBelow(this.layer.index, this.marker.x, this.marker.y);
+		
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	  game.debug.text('Elapsed seconds: ' + this.game.time.totalElapsedSeconds(), 125, 495);
 
+		
             this.checkKeys();
 
             if (this.turning !== Phaser.NONE)
