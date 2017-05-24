@@ -12,8 +12,10 @@
 
 τα sprites του dot.png τα βρηκα στο παρακάτω site και ακολούθησα μέρος της παραπάνω διαδικασίας για να τα φέρω στις σωστές διαστάσεις και τύπο αρχείου καθώς επίσης τα ενσωματωσα στο tiled στη θεση του dot https://s-media-cache-ak0.pinimg.com/originals/e7/6e/c2/e76ec24d1753476136cfbc858aac1886.png
 
-στη συνέχεια χρησιμοποίησα το tiled για να αλλάξω την πίστα
+στη συνέχεια χρησιμοποίησα το tiled για να αλλάξω την πίστα, προσθεσα χρόνο και ζωές και score αλλαξα το background 
 
 το link για το παιχνίδι https://p14zoun.github.io/pacman/pacman.html
 
 το link για τον λογαριασμό μου https://github.com/p14zoun
+
+το link για το github page μου https://p14zoun.github.io/pacman/
